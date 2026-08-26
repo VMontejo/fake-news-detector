@@ -17,6 +17,7 @@ def predict_article(model, tokenizer, title, text):
         padding="max_length",
         max_length=512,
         return_tensors="pt",
+        return_token_type_ids=False
     )
 
     #Check GPU availability
